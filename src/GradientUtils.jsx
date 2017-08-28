@@ -45,7 +45,7 @@ function generateRegExp() {
         rComma = /\s*,\s*/, // Allow space around comma.
         rColorHex = /\#(?:[A-Fa-f0-9]{6}|[A-Fa-f0-9]{3})/, // 3 or 6 character form
         rDigits3 = /\(\s*(?:[0-9]{1,3}\s*,\s*){2}[0-9]{1,3}\s*\)/,// "(1, 2, 3)"
-        rDigits4 = /\(\s*(?:[0-9]{1,3}\s*,\s*){3}(?:0|0?.[1-9]+)\s*\)/,// "(1, 2, 3, 4)"
+        rDigits4 = /\(\s*(?:[0-9]{1,3}\s*,\s*){3}(?:0|0?.[0-9]+)\s*\)/,// "(1, 2, 3, 4)"
         rValue = /(?:[+-]?\d*\.?\d+)(?:%|[a-z]+)?/,// ".9", "-5px", "100%".
         rKeyword = /[_A-Za-z-][_A-Za-z0-9-]*/,// "red", "transparent", "border-collapse".
         rColor = combineRegExp([

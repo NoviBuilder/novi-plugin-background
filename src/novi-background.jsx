@@ -6,7 +6,7 @@ const Plugin = {
     name: "novi-plugin-background",
     title: "Novi Background",
     description: "Novi Background description",
-    version: "1.0.0",
+    version: "1.0.1",
     defaults: {
         querySelector: '.novi-background'
     },

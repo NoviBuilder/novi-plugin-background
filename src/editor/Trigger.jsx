@@ -57,6 +57,7 @@ export default class Trigger extends Component {
             ColorStore.setGradientString(null);
         }
 
+
         this.state = {
             color: value
         };
