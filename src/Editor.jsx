@@ -3,7 +3,8 @@ import Header from "./editor/Header";
 import Body from "./editor/Body";
 import Types from "./Types";
 import ColorStore from "./ColorStore";
-
+const Language = novi.language;
+const messages = Language.getDataByKey("novi-plugin-background");
 const React = novi.react.React;
 const lodash = novi.utils.lodash;
 
@@ -11,9 +12,9 @@ const EditorItem = {
     trigger: <Trigger />,
     header: [<Header />],
     body: [<Body />],
-    tooltip: "Change Background Color",
+    tooltip: messages.editor.tooltip,
     closeIcon: "submit",
-    title: "Change Background Color",
+    title: messages.editor.title,
     width: 324,
     height: 169,
     onSubmit: onSubmit,

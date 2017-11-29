@@ -6,7 +6,7 @@ const Component = novi.react.Component;
 const ToolColor = novi.ui.toolColor;
 const RadioGroup = novi.ui.radioGroup;
 const ToolGradient = novi.ui.toolGradient;
-
+const Language = novi.language;
 
 
 export default class Body extends Component {
@@ -28,6 +28,7 @@ export default class Body extends Component {
             },
             element: props.element
         };
+        this.messages = Language.getDataByKey("novi-plugin-background");
 
         this.renderColorFields = this.renderColorFields.bind(this);
         this.renderGradientFields = this.renderGradientFields.bind(this);
@@ -38,11 +39,11 @@ export default class Body extends Component {
 
         this.options = [
             {
-                label: "Color",
+                label: this.messages.editor.body.colorOption,
                 value: "color"
             },
             {
-                label: "Gradient",
+                label: this.messages.editor.body.gradientOption,
                 value: "gradient"
             }
         ];
@@ -86,7 +87,7 @@ export default class Body extends Component {
         return (
             <div>
                 <p className="novi-label" style={{"margin": "20px 0 0 5px"}}>
-                    Color:
+                    {this.messages.editor.body.colorPlaceholder}
                 </p>
                 <ToolColor
                     direction={`bottom-left`}
@@ -123,7 +124,7 @@ export default class Body extends Component {
                 className="novi-background-wrap">
                 <style>{this.style}</style>
                 <p className="novi-label" style={{"marginTop": 0, marginLeft: 5}}>
-                    Background Fill Type:
+                    {this.messages.editor.body.bgFillType}
                 </p>
                 <RadioGroup options={this.options} value={this.state.type} onChange={this.onTypeChange}/>
 

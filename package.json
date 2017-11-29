@@ -1,6 +1,6 @@
 {
   "name": "@novi_dev/novi-plugin-background",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Novi background plugin",
   "main": "dist/novi-plugin-background.js",
   "repository": {
