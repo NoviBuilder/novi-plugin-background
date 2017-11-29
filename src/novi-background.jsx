@@ -9,7 +9,7 @@ const Plugin = {
     description: "Novi Background description",
     version: "1.0.2",
     dependencies: {
-      novi: "0.8.6"
+        novi: "0.8.6"
     },
     defaults: {
         querySelector: '.novi-background'
